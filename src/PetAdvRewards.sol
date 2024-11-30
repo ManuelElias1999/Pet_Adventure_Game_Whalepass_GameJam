@@ -4,6 +4,12 @@ pragma solidity ^0.8.19;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
+/**
+ * @dev Contract deployed on Base Sepolia
+ * @notice You can view the deployed contract at:
+ * https://sepolia.basescan.org/address/0xCd4b68aEa3fc2Db21C441F53ABDA1EdFe68D8209
+*/
+
 contract PetAdvRewards is Ownable {
     address public usdcTokenAddress; // Address of USDC contract on Base
     mapping(address => bool) public authorizedAgents; // Authorized agents

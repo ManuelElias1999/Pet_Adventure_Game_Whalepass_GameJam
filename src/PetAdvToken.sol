@@ -5,6 +5,12 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
+/**
+ * @dev Contract deployed on Base Sepolia
+ * @notice You can view the deployed contract at:
+ * https://sepolia.basescan.org/address/0x3cA89Cc4b5B42bc33EE35299afD4Eb264F0e713C
+*/
+
 contract PetAdvToken is ERC20, Ownable {
     // USDC contract address on Base blockchain
     address public usdcAddress;

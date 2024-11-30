@@ -7,6 +7,8 @@ This repository contains the smart contracts for the Pet Adventure game on Base 
 ### PetAdvToken.sol
 An ERC20 token contract that handles the in-game currency. Players can buy tokens using USDC at a configurable exchange rate.
 
+**Deployed Contract:** [0x3cA89Cc4b5B42bc33EE35299afD4Eb264F0e713C](https://sepolia.basescan.org/address/0x3cA89Cc4b5B42bc33EE35299afD4Eb264F0e713C)
+
 **Technologies:**
 - OpenZeppelin ERC20 implementation
 - IERC20 for USDC integration
@@ -21,6 +23,8 @@ An ERC20 token contract that handles the in-game currency. Players can buy token
 ### PetAdvNFT.sol 
 An ERC721 contract that represents the pets in the game. The NFTs metadata is stored on Whalepass for decentralized and permanent storage.
 
+**Deployed Contract:** [0xd686F2838D67fB1c89652b338460F5a75427C46d](https://sepolia.basescan.org/address/0xd686F2838D67fB1c89652b338460F5a75427C46d)
+
 **Technologies:**
 - OpenZeppelin ERC721 implementation
 - Whalepass for metadata storage
@@ -33,6 +37,8 @@ An ERC721 contract that represents the pets in the game. The NFTs metadata is st
 
 ### PetAdvRewards.sol
 A rewards distribution contract that handles USDC rewards for players.
+
+**Deployed Contract:** [0xCd4b68aEa3fc2Db21C441F53ABDA1EdFe68D8209](https://sepolia.basescan.org/address/0xCd4b68aEa3fc2Db21C441F53ABDA1EdFe68D8209)
 
 **Technologies:**
 - OpenZeppelin Ownable for access control

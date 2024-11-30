@@ -6,6 +6,12 @@ import {PetAdvNFT} from "../src/PetAdvNFT.sol";
 import {PetAdvToken} from "../src/PetAdvToken.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
+/**
+ * @dev Contract deployed on Base Sepolia
+ * @notice You can view the deployed contract at:
+ * https://sepolia.basescan.org/address/0xd686F2838D67fB1c89652b338460F5a75427C46d
+*/
+
 contract PetAdvNFTTest is Test {
     PetAdvNFT public nft;
     PetAdvToken public token;

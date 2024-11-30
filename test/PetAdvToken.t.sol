@@ -5,6 +5,12 @@ import {Test, console} from "forge-std/Test.sol";
 import {PetAdvToken} from "../src/PetAdvToken.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
+/**
+ * @dev Contract deployed on Base Sepolia
+ * @notice You can view the deployed contract at:
+ * https://sepolia.basescan.org/address/0x3cA89Cc4b5B42bc33EE35299afD4Eb264F0e713C
+*/
+
 contract PetAdvTokenTest is Test {
     PetAdvToken public token;
     address public usdcAddress;

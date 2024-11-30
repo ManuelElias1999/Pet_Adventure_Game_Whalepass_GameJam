@@ -14,7 +14,7 @@ contract PetAdvRewardsScript is Script {
 
         // USDC contract address on Base
         address usdcAddress = address(0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913);
-        uint256 rewardAmount = 1; // 1 USDC per reward (USDC has 6 decimals)
+        uint256 rewardAmount = 1;
         rewards = new PetAdvRewards(usdcAddress, rewardAmount);
 
         vm.stopBroadcast();
