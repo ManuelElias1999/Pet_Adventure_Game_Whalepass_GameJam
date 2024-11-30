@@ -1,66 +1,64 @@
-## Foundry
+# Pet Adventure Contracts
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This repository contains the smart contracts for the Pet Adventure game on Base Sepolia. The project consists of three main contracts:
 
-Foundry consists of:
+## Smart Contracts
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+### PetAdvToken.sol
+An ERC20 token contract that handles the in-game currency. Players can buy tokens using USDC at a configurable exchange rate.
 
-## Documentation
+**Technologies:**
+- OpenZeppelin ERC20 implementation
+- IERC20 for USDC integration
+- Ownable for access control
 
-https://book.getfoundry.sh/
+**Features:**
+- Token minting by authorized agents
+- Token purchasing with USDC
+- Configurable exchange rate
+- Authorization system for agents
 
-## Usage
+### PetAdvNFT.sol 
+An ERC721 contract that represents the pets in the game. The NFTs metadata is stored on Whalepass for decentralized and permanent storage.
 
-### Build
+**Technologies:**
+- OpenZeppelin ERC721 implementation
+- Whalepass for metadata storage
+- Ownable for access control
 
-```shell
-$ forge build
-```
+**Features:**
+- NFT minting functionality
+- Metadata integration with Whalepass
+- Authorization system for minting
 
-### Test
+### PetAdvRewards.sol
+A rewards distribution contract that handles USDC rewards for players.
 
-```shell
-$ forge test
-```
+**Technologies:**
+- OpenZeppelin Ownable for access control
+- IERC20 for USDC integration
 
-### Format
+**Features:**
+- USDC reward distribution to players
+- Configurable reward amounts
+- Authorization system for reward distributors
 
-```shell
-$ forge fmt
-```
+## Technology Stack
 
-### Gas Snapshots
+- **Solidity:** ^0.8.19
+- **Framework:** Foundry
+- **Network:** Base Sepolia
+- **Token Standards:** ERC20, ERC721
+- **Dependencies:** OpenZeppelin Contracts
+- **Metadata Storage:** Whalepass
 
-```shell
-$ forge snapshot
-```
+## Development
 
-### Anvil
+Each contract has its own:
+- Deployment script in the `script/` folder
+- Comprehensive test suite in the `test/` folder
+- Configuration in `foundry.toml`
 
-```shell
-$ anvil
-```
+## Testing and Deployment
 
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+The contracts include extensive test coverage and are deployed on Base Sepolia testnet. The deployment scripts use Foundry for deployment.
